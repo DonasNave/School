@@ -1,16 +1,33 @@
 main {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 h1 {
     color:darkolivegreen;
     font-size: large;
+    position: absolute;
 }
 
 .main-bar {
     color: dodgerblue;
+    display: inline-flex;
     float: right;
+    
+}
+
+.nav-menu {
+  width: fit-content;
+  background-color: aliceblue;
 }
 
 .dropbtn {
