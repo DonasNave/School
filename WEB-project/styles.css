@@ -13,8 +13,8 @@ footer {
 }
 
 h1 {
-    color:darkolivegreen;
-    font-size: large;
+    color:black;
+    font-size: 32;
     position: absolute;
 }
 
@@ -27,11 +27,10 @@ h1 {
 
 .nav-menu {
   width: fit-content;
-  background-color: aliceblue;
 }
 
 .dropbtn {
-    color: black;
+    color: white;
     padding: 8px;
     font-size: 16px;
     border: none;
@@ -45,19 +44,27 @@ h1 {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: black;
+    color: gray;
+    background: rgb(14,14,14,0.5);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
 
-  .dropdown-content a:hover {background-color: #ddd;}
+  .top-background {
+    position: absolute;
+    width: 100%;
+    border-left: none;
+    box-sizing: border-box;
+    
+  }
+
+  .dropdown-content a:hover {color: blue}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {color:dodgerblue;}
