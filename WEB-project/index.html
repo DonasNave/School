@@ -3,82 +3,61 @@
     <head>
         <metacharset="UTF-8"/>
         <link rel="stylesheet" href="styles.css">
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous">
+        </script>
+        
+        <script> 
+          $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+          });
+        </script> 
+
     </head>
 
-    <img src="./pictures/writing-mainpage.jpg" class="top-background">
-    </div>
-      <a href="./index.html"><h1>EduPlus</h1></a>
-      <div class="main-bar">
-         <div>Nav</div>
-         <div>Next</div>
-      </div>
+    <body style="margin: 0;">
+    <div>
+
+      <div id="header"></div>
+      <div>
+    <img src="./pictures/mainpage/writing.jpg" class="top-background spacer-small">
+  </div>
+  </div>
+      
+
+     
+
 
       <main>
-          <header>
+         
 
-              <nav>
-                  <div class="nav-menu">
-                      <div class="dropdown">
-                          <p class="dropbtn">Home</p>
-                          <div class="dropdown-content">
-                            <a href="./about-us.html">About us</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <p class="dropbtn">Courses</p>
-                          <div class="dropdown-content">
-                            <a href="#">Details</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <p class="dropbtn">Events</p>
-                          <div class="dropdown-content">
-                            <a href="#">Our events</a>
-                            <a href="#">Partner events</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <p class="dropbtn">Pages</p>
-                          <div class="dropdown-content">
-                            <a href="#">Instructors</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <p class="dropbtn">Blog</p>
-                          <div class="dropdown-content">
-                            <a href="#">Latest posts</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                          <a href="#"><p class = "dropbtn">Contact</p></a>
-                          </div>
-                        </div>
-                  </div>
+      <div class="spacer"></div>
 
-              </nav>
+      <div class="spacer spacer-small" style="background-color: darkblue;"></div>
 
-           
-          </header>
+      <div class="spacer"></div>
 
+      <div class="spacer spacer-small" style="background-color: lightblue;"></div>
 
-    <body>
-     
-            
-            <p>Hello world!</p>
+      <div class="spacer"></div>
+
+      <div style=" background:rgba(0,0,0,0.6);">
+      <img src="./pictures/mainpage/people.jpg"class="top-background" style="height: 700px;">
+      </div>
+
+      <div class="spacer spacer-small" style="background-color: lightblue;"></div>
+
+      <div class="spacer spacer-small"></div>
 
 
         </main>
 
 
 
-        <footer>
-            <ul>Our courses
-                <li>Web development</li>
-                <li>Business studies</li>
-            </ul>
-            <ul>Company
-                <li>About</li>
-            </ul>
-        </footer>
+        <div id="footer"></div>
     </body>
 </html>
