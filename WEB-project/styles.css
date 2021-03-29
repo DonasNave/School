@@ -8,6 +8,11 @@ footer {
   overflow: hidden;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 header#masthead{display: none;}
 nav#mobile-navigation{display: none;}
 
