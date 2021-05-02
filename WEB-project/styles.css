@@ -2,6 +2,10 @@ body{
   margin: 0px;
 }
 
+main{
+  padding-top:100px;
+}
+
 footer {
   color: white;
   position: relative;
@@ -23,7 +27,6 @@ header {
 h1 {
     color:black;
     font-size: 32;
-    position: fixed;
 }
 
 .main-bar {
