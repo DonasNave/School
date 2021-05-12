@@ -6,9 +6,7 @@ body{
   flex-direction: column;
 }
 
-.navigation {
-  display: inline-flex;
-}
+
 
 main{
   padding-top:100px;
@@ -23,9 +21,7 @@ a {
 header#masthead{display: none;}
 nav#mobile-navigation{display: none;}
 
-header {
-  position: fixed;
-}
+
 
 * {
   box-sizing: border-box;
@@ -52,47 +48,8 @@ li{
   margin-right: 20%;
 }
 
-.nav-menu {
-  width: fit-content;
-}
 
 
-.dropbtn {
-    color: white;
-    background: rgb(14,14,14,0.5);
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-  }
-
-  .dropbtnalt {
-    color: black;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    font-weight: bold;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: gray;
-    background: rgb(255, 255, 255);
-    padding: 8px;
-    text-decoration: none;
-    display: block;
-  }
 
   .top-background {
     position: relative;
@@ -120,10 +77,83 @@ li{
   .spacer-small {
     height: 600px;
   }
+  /* --------------------------------------------------------*/
 
+  /* header part */
+ 
+  nav {
+    width: 100%;
+    background-color: #e9f3f7;
+    font-size: 18px;
+    line-height: 22px;
+    color: #062a35;
+    font-weight: 500;
+    font-family: "Roboto";
+    padding-bottom: 10px;
+    padding: 20px;
+  }
 
-  /* footer part */
+  nav .top__logo{
+    justify-content: left;
+    font-size: 34px;
+    color: #062a35;
+  }
+
+  .navigation {
+    display: inline;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dropbtn {
+    color: white;
+    background: rgb(14,14,14,0.5);
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropbtnalt {
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   
+  .dropdown {
+    position: relative;
+    display: inline;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: gray;
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {color: white; background: sandybrown;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {color:dodgerblue;}
+  .dropdown:hover .dropbtnalt {color: sandybrown;}
+
+  /* header part END */
+
+  /* --------------------------------------------------------*/
+
+  /* footer part */  
   footer {
     color: white;
     position: relative;
@@ -143,8 +173,7 @@ li{
   }
 
   footer .top {
-    display: inline;
-    align-self: center;
+    display: inline;    
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -153,27 +182,34 @@ li{
   .top__logo{
     font-size: 45px;
     letter-spacing: -1px;
-    padding-left: 10px;
-    align-self: center;
-    line-height: 22px;
+    text-align: center;
+    line-height: 50px;
     color: #ffffff;
-    font-weight: 900;
-    font-family: "Roboto";
-  }
-  .top__socials {
     display: inline-flex;
-    justify-content: space-between;
-    align-items: stretch;  
-    background-color: royalblue;
+    font-family: "Roboto";
+    width: 100%;
+    justify-content: center;
+  }
+
+  .top__logo span {    
+    font-weight: 900;
+  }
+
+  .top__logo img {
+    height: 46px;
+    padding-right: 20px;
+  }
+
+  .top__logo .text {
+    display: inline-block;
+    align-self: center;
+  }
+
+  .top__socials {    
+    justify-content: center;
+    text-align: center;    
     width: 100%;
   }
-
-  .top__socials::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-
 
   .top .media{
     padding: 40px;
@@ -182,19 +218,23 @@ li{
     color: #ffffff;
     font-family: "Font Awesome5 Brands";
     vertical-align: middle;
-    text-align: center;
     display: inline-flex;
+  }
+
+  .top__socials img {
+    width: 50px;
   }
 
   footer .legend {
     display: inline;
     width: 100%;
-    background-color: saddlebrown;
     justify-content: space-between;
   }
 
   .legend .group {
     padding: 20px;
+    
+    text-align: center;
   }
 
   .legend .heading {
@@ -215,6 +255,14 @@ li{
     list-style-type:none; 
     padding-left: 0; 
     width: max-content;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .legend li {
+    
+    text-align: center;
   }
 
   .group__input {
@@ -230,6 +278,7 @@ li{
   }
 
   .group__input .input {
+    width: 100%;
     display: inline-flex;
   }
 
@@ -265,14 +314,11 @@ li{
   }
   /* footer part END */
 
-  .dropdown-content a:hover {color: white; background: sandybrown;}
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {color:dodgerblue;}
-  .dropdown:hover .dropbtnalt {color: sandybrown;}
 
+   /* tablet */
 
   @media only screen and (min-width: 580px) {
-    /* tablet */
+   
 
     .nav-menu{
        display: inline-flex;
@@ -284,15 +330,20 @@ li{
       margin-right: 10%;
     }
 
-    footer .legend {
-      display: inline;
+    .navigation {
+      display: inline-flex;
     }
+
+    .dropbtnalt{
+      margin-right: 20px;
+    }
+    
 
 
   }
 
-  @media only screen and (min-width: 768px) {
     /* For desktop: */
+  @media only screen and (min-width: 768px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -309,7 +360,26 @@ li{
     .nav-menu{
        display: inline-flex;
     }
+    
+    footer .content {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
 
+    
+  }
+
+  @media only screen and (min-width: 1200px) {
+    
+    nav{
+      display: inline-flex;
+    }
+
+    .navigation {
+      justify-content: flex-end;
+      align-self:center;
+    }
+    
     footer .legend {
       display: inline-flex;
     }
@@ -318,19 +388,18 @@ li{
       display: inline-flex;
       align-items: center;
     }
-
     
-    footer .content {
-      margin-left: 20%;
-      margin-right: 20%;
-    }
-
-
-    .top__socials{  
+    .top__socials {
+      display: inline-flex;      
       justify-content: flex-end;
     }
 
-    .top__logo{
-      float: left;
+    .legend .group {
+      text-align: left;
     }
+
+    .top__logo{
+      justify-content: left;
+    }
+  
   }
