@@ -34,6 +34,7 @@ h1 {
 
 .location {
   background-image: url("./pictures/mainpage/people.jpg");
+  background-size: cover;
   width: 100%;
   height: 25em;
   display: flex;
@@ -78,13 +79,50 @@ h1 {
   height: 10em;
   text-align: center;
   display: flex;
+  position: relative;
   border-radius: 50%;
   background-color: #e95721;
+}
+
+
+.experience .main--img {
+  height: 32em;
+  width: 100%;
+  margin-right: 3em;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.experience .secondary--img {
+  top:-13.5em;
+  left:3em;
+  height: 15em;
+  width: 40%;
+  object-fit: cover;
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+
+.upper {
+  top:-17.5em;
+  left: 21.5em;
+  z-index: 3;
+}
+
+.lower {
+  background-color: white;
+  top:-27em;
+  left: 22em;
+  z-index: 2;
 }
 
 .circle .text {
   padding-top: 2em;
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .circle span {
@@ -96,20 +134,25 @@ h1 {
   padding: 2em;
   padding-top: 7em;  
   padding-bottom: 8em;
+  height: fit-content;
 }
 
 .experience .left {
   width: 50%;
-  float: left ;
+  height: fit-content;
+  float: left ;  
+  height: 35em;
 }
 
 .experience .right {
   width: 35%;
-  float: right ;
+  margin-left: 8em;
+  float: right ;  
+  height: fit-content;
 }
 
 .introduction {
-  color: orange;
+  color:#e95721;
   font-size: 1.2em;
 }
 
@@ -154,11 +197,13 @@ h2 {
 /* STATISTICS part */
 
 .statistics {
-  width: 100%;
+  width: 80%;
   top:inherit;
   display:inline-flex;
-  justify-content: space-evenly;
-  position: absolute;
+  justify-content: space-between;
+  position: absolute;  
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .statistics .card {
@@ -199,11 +244,429 @@ h2 {
 }
 
 .goals .right {
-  width: 60%;
+  width: 65%;
+}
+
+.goals h1 {
+  font-size: 3em;
+  margin-top: 0.3em;
+}
+
+.percentages {
+  display: inline-flex;
+  margin-left: -4em;
+  height: 100%;
+}
+
+.percentages img {
+  height: 8em;
+}
+.percentages--card{
+  width: 40%;
+  margin: 1em;
+}
+
+.percentages h3 {
+  margin-left: 2.3em;
+}
+
+.goals .promo {
+  width: 75%; 
+  max-width: 40em; 
   float: right;
+  margin-top: 3%;
+  margin-right: 18%;
 }
 
 /* GOALS part END */
+
+/* LECTORS part */
+
+.lectors{
+  display: inline;
+  height: fit-content;
+}
+
+.lectors h1{
+
+}
+
+.lectors h2{
+  margin-top: -0.2em;
+  padding-top: 1.2em;
+  margin-bottom: 0;
+}
+
+.lectors h4{
+  border-bottom: rgba(99, 110, 121, 0.651) 0.05em solid;
+  margin-top: 0;
+  padding-bottom: 1.4em;
+  margin-bottom: 0.8em;
+}
+
+.standart--heading{
+  text-align: center;  
+  padding-top: 8%;
+}
+
+.lectors--cards{
+  display: inline-flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.lectors--cards .card{
+  display: inline;
+}
+
+
+.lectors .card--info {
+  border: rgba(99, 110, 121, 0.651) 0.05em solid;
+  border-top: 0;  
+  padding: 2em;
+  width: 100%;
+  padding-top: 0;
+  height: 10em;
+}
+
+.lectors--cards .photo {
+  height: 15em;
+  width: 15em;
+  object-fit: cover;
+}
+
+.lectors .courses {
+  display: inline-flex;
+}
+
+.lectors .courses img {
+  height: 1em;
+  width: 1em;
+  object-fit: cover;
+  margin-right: 0.5em;
+}
+
+.upbtn {
+  color: #ffffff;
+  background-color:#e95721;
+  padding-left: none;
+  width: 2em;
+  height: 2em;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 0.5em;    
+}
+
+.uproll-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  bottom: -1.5em;;
+  z-index: 2;
+}
+.uproll-content a {
+  color: gray;
+  background: rgb(255, 255, 255);
+  padding: 8px;
+  text-decoration: none;
+  width: fit-content;
+  display: block;
+}
+
+.uproll-content img {    
+  height: 2em;
+  width: 2em;  
+  object-fit: cover;
+}
+
+.lectors--cards .dropdown {
+  top:-11.2em;
+  left: 8.8em;
+}
+
+.uproll-content a:hover {color: white; background:#e95721;}
+.dropdown:hover .uproll-content {display: block;}
+.dropdown:hover .upbtn {background-color: #e95621f3 ;color:sandybrown;}
+
+
+/* LECTORS part END */
+
+/* FEEDBACK part */
+
+.feedback {
+  background-image: url("./pictures/media/group-students.jpg");
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: block;
+}
+
+.feedback h1 {
+  color: #ffffff;
+}
+
+.feedback::after {
+  content: '\A';
+  position: absolute;
+  z-index: 1;
+  width: 100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.75);
+}
+
+.feedback--content {
+  position: relative;  
+  z-index: 2;
+}
+
+.feedback--heading{
+  text-align: center;  
+  padding-top: 8%;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.feedback .reviews {
+  display: inline-flex;
+  align-items: center;
+}
+
+.reviews .left {
+  background: #ffffff;
+  padding: 3em;
+  float: left;
+  margin-left: 10%;
+  margin-top:5%;
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+
+.reviews .text{
+  font-size: 1.5em;
+  margin-top:0;
+}
+
+.reviews .underline{
+  color: darkgrey;
+}
+
+.commentator {
+  display: inline-flex;
+  align-items: center;
+}
+
+.commentator-pic {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.commentator--nav  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.smallbutton {
+  color: rgb(255, 255, 255);
+  background-color: #e95721;
+  font-size: 1em;
+  height: 2em;
+  font-weight: 700;
+  width: fit-content;
+  white-space: nowrap;
+  margin: 8px 0;
+  border: none;
+  align-items: center;
+  vertical-align:middle;
+}
+
+.commentator--info {
+  margin-left: 1em;
+}
+
+.commentator--nav img {
+  height: 4em;
+  float: right;
+}
+
+.commentator--buttons {
+  display: inline;
+}
+
+.commentator h2 {
+  margin-bottom: 0.2em;
+}
+
+.commentator h3 {
+  margin-top: 0.2em;
+}
+
+.reviews .right {
+  float: right;
+  margin-left: 5%;
+  margin-top:5%;
+  width: 40%;
+  height: 30em;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.gallery {
+  display: inline-flex;
+}
+
+.gallery img {
+  height: 8em;
+  width: 8em;  
+  position: relative;
+  object-fit: cover;
+  margin: 1em;
+}
+
+.gallery .column {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gallery .third {
+  position: relative;
+  top:-3em;
+}
+
+.white {  
+  background-color: white;  
+  top: -11.8em;
+  left: 0.4em;
+}
+
+.orange {
+  background-color: #e95721;
+  top: -34.2em;
+  left: 0.4em;
+}
+
+.feedback .square {
+  position: relative;
+  height: 8em;
+  width: 8em;
+  z-index: -1;
+
+}
+
+/* FEEDBACK part END */
+
+/* NEWSnBLOG part */
+
+.newsnblog {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.blog--cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  margin-bottom: 10%;
+}
+
+.blog--cards .card {
+  margin: 2em;  
+  width: 25em;
+  align-self: center;
+}
+
+.blog--cards .bottom {
+  top:-1em;
+  z-index: 1;
+  border: rgba(99, 110, 121, 0.651) 0.05em solid;
+  display: flex;
+  flex-direction: column;
+  border-top: none;
+  padding: 1em;
+  position: relative;
+  padding-top: -1em;
+}
+
+.blog--cards .img--main {
+  height: 25em;
+  width: 25em;
+  position: relative;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.blog--cards .info {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1em;
+  padding: 0.4em;
+}
+.blog--cards .text {
+  margin: 0 1em;
+}
+
+.blog--cards .icon {
+  height: 2em;
+  width: 2em;
+  object-fit: cover;
+}
+
+.blog--cards .holder {  
+  align-items: center;
+  display: inline-flex;
+}
+
+.blog--cards .author {
+  display: inline-flex;
+  align-items: center;
+} 
+
+.blog--cards .author--img {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.newsnblog .buttonholder {
+  width: 100%;
+  height: 0.5em;
+}
+
+.newsnblog h2 {
+  max-height: 2.5em;
+  overflow: hidden;
+}
+
+.newsnblog .smallbutton {
+  float: right;
+  height: 3em;
+  width: 3em;
+  position: relative;
+  left: 1em;
+  bottom: 2em;
+  
+}
+/* NEWSnBLOG part END */
+
 
 li{
   margin: 0px 0px 10px 0px;
@@ -284,7 +747,7 @@ li{
     margin-bottom: 10px;
     white-space: nowrap;
   }
-  
+
   .dropdown {
     position: relative;
     display: inline;
@@ -644,8 +1107,9 @@ li{
     }
     
     .top__socials {
-      display: inline-flex;      
-      justify-content: space-evenly;
+      display: inline-flex;
+      margin-left: 5%;      
+      justify-content: space-between;
     }
 
     .legend .group {
