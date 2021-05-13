@@ -6,17 +6,14 @@ body{
   flex-direction: column;
 }
 
-
-
-main{
-  padding-top:100px;
-}
-
-
 a {
-  color: white;
   text-decoration: none;
 }
+
+main{
+}
+
+
 
 header#masthead{display: none;}
 nav#mobile-navigation{display: none;}
@@ -27,17 +24,186 @@ nav#mobile-navigation{display: none;}
   box-sizing: border-box;
 }
 
+
 h1 {
     color:black;
     font-size: 32;
 }
 
-.menu {
-    color: dodgerblue;
-    display: flex;
-    float: right;
-    right: 0;
+/* LOCATION part*/
+
+.location {
+  background-image: url("./pictures/mainpage/people.jpg");
+  width: 100%;
+  height: 25em;
+  display: flex;
 }
+
+.location::after {
+  content: '\A';
+  position: absolute;
+  z-index: 1;
+  width: inherit; height: inherit;
+  top:inherit; left:inherit;
+  background:rgba(0,0,0,0.7);
+}
+
+.location__text {
+  z-index: 2;
+  display: inline;
+  width: 100%;
+  height: fit-content;
+  text-align: center;  
+  color:white;
+  font-weight: 900;
+  padding-top: 8em;
+  white-space: nowrap;
+}
+
+.location__text .pagename {
+  font-size: 5em;
+}
+
+.location__text .path {
+  font-size: 2em;  
+}
+
+/* LOCATION part END*/
+
+
+/* EXPERIENCE part*/
+
+.circle {
+  width: 10em;
+  height: 10em;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+  background-color: #e95721;
+}
+
+.circle .text {
+  padding-top: 2em;
+  color: white;
+}
+
+.circle span {
+  font-size: 3em;
+}
+
+.experience {
+  display: flex;
+  padding: 2em;
+  padding-top: 7em;  
+  padding-bottom: 8em;
+}
+
+.experience .left {
+  width: 50%;
+  float: left ;
+}
+
+.experience .right {
+  width: 35%;
+  float: right ;
+}
+
+.introduction {
+  color: orange;
+  font-size: 1.2em;
+}
+
+.experience h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h1 span {
+  font-weight: 900;
+}
+
+.right--info {
+  top: inherit;
+  height: fit-content;
+  padding-left: 1.5em;
+  border-left: 0.2em solid orange;
+  margin-bottom: 1.5em;
+
+}
+
+.qualities{
+  display: inline-flex;
+  padding-bottom: 1.8em;
+}
+
+.lined {  
+  border-bottom: 0.05em solid rgba(177, 175, 175, 0.445);
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+.qualities img {
+  padding-top: 0.5em;
+  height: 6em;
+}
+
+/* EXPERIENCE part END*/
+
+/* STATISTICS part */
+
+.statistics {
+  width: 100%;
+  top:inherit;
+  display:inline-flex;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+.statistics .card {
+  display: inline-flex;
+  background-color: white;
+  height: fit-content;
+  position: relative;
+  top: -3.5em;
+  padding: 0.5em 1em 0.5em 0em;
+  border-top: 0.2em solid #e95721;
+}
+
+.statistics img {
+  height: 5.5em;
+  padding-top: 0.4em;
+}
+
+.statistics h2 {
+  margin-bottom: 0.2em;
+  color: #e95721;
+}
+
+/* STATISTICS part END*/
+
+/* GOALS part */
+
+.goals {
+  background-color: rgb(232, 250, 244);
+  padding-top: 8em;  
+  padding-bottom: 4em;  
+  display: flex;
+}
+
+.goals .left {
+  width: 40%;
+  margin-left: 10%;
+  float: left;
+}
+
+.goals .right {
+  width: 60%;
+  float: right;
+}
+
+/* GOALS part END */
 
 li{
   margin: 0px 0px 10px 0px;
@@ -96,21 +262,16 @@ li{
   nav .top__logo{
     justify-content: left;
     font-size: 34px;
-    color: #062a35;
+    color: #062a35;    
+    float: left;
+    vertical-align: middle;
   }
 
   .navigation {
     display: inline;
     width: 100%;
     justify-content: space-between;
-  }
-
-  .dropbtn {
-    color: white;
-    background: rgb(14,14,14,0.5);
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
+    z-index:2;
   }
 
   .dropbtnalt {
@@ -121,6 +282,7 @@ li{
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+    white-space: nowrap;
   }
   
   .dropdown {
@@ -133,7 +295,7 @@ li{
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
   }
   
   .dropdown-content a {
@@ -149,6 +311,61 @@ li{
   .dropdown:hover .dropbtn {color:dodgerblue;}
   .dropdown:hover .dropbtnalt {color: sandybrown;}
 
+  .downarrow {
+    display: none;
+  }
+
+  .heading {
+    display: inline-flex;    
+    text-align: center;
+  }
+  
+  .heading .signin {
+    display: none;
+    height: 50px;
+  }
+
+  .login {
+    display: none;
+  }
+
+
+  nav .media {
+    background-color: white;
+    margin: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login .orange {
+    background-color: orange;
+  }
+
+  .login .transparent {
+    background: none;
+    margin-left: 2em;
+  }
+
+  nav img {
+    vertical-align: middle;
+        align-self: center;
+    height: 40px;
+  }
+
+  .signin {
+    display: inline-flex;    
+    background-color: white;
+  }
+
+  .signin .text {
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 28px;
+    padding: 10px;
+    padding-right: 20px;
+  }
+
   /* header part END */
 
   /* --------------------------------------------------------*/
@@ -160,9 +377,9 @@ li{
     overflow: hidden;
     height: fit-content;
     background-color: #052935;
-    scroll-behavior: auto;
     resize: vertical;
     overflow: auto;
+    
   }
 
   
@@ -197,7 +414,8 @@ li{
 
   .top__logo img {
     height: 46px;
-    padding-right: 20px;
+    padding-right: 20px;    
+    align-self: center;
   }
 
   .top__logo .text {
@@ -211,8 +429,13 @@ li{
     width: 100%;
   }
 
+  .top__socials .text {
+    padding-left: 0;
+  }
+
   .top .media{
-    padding: 40px;
+    padding: 10px;
+    background: none;
     font-size: 13px;
     line-height: 22px;
     color: #ffffff;
@@ -293,14 +516,22 @@ li{
     border: none;
   }
 
-  .group__input button {
+  .defbutton {
     color: rgb(255, 255, 255);
     background-color: #e95721;
-    font-size: 24px;
-    width: 100px;
-    padding: 12px 20px;
+    font-size: 1em;
+    height: 4em;
+    font-weight: 700;
+    width: fit-content;
+    padding: 12px 40px;
+    white-space: nowrap;
     margin: 8px 0;
-    border: none;
+    border: none;    
+  }
+  
+  .embig{    
+    vertical-align: middle;
+    font-size: 2em;
   }
 
   footer .copyright {
@@ -315,15 +546,23 @@ li{
   /* footer part END */
 
 
+
    /* tablet */
 
-  @media only screen and (min-width: 580px) {
+  @media (min-width: 580px) {
    
 
     .nav-menu{
        display: inline-flex;
     }
 
+    .downarrow {
+      display: inline;
+      vertical-align: text-top;
+      
+      font-weight: bold;
+      font-size: 0.8em;
+    }
     
     footer .content {
       margin-left: 10%;
@@ -338,7 +577,16 @@ li{
       margin-right: 20px;
     }
     
+    
 
+    .heading .signin {
+      display: flex;
+      float: right;
+    }
+
+    nav .heading{
+      width: 100%;
+    }
 
   }
 
@@ -366,6 +614,8 @@ li{
       margin-right: 20%;
     }
 
+
+
     
   }
 
@@ -375,11 +625,15 @@ li{
       display: inline-flex;
     }
 
+    .heading .signin {
+      display: none;
+    }
+
     .navigation {
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-self:center;
     }
-    
+
     footer .legend {
       display: inline-flex;
     }
@@ -391,7 +645,7 @@ li{
     
     .top__socials {
       display: inline-flex;      
-      justify-content: flex-end;
+      justify-content: space-evenly;
     }
 
     .legend .group {
@@ -399,7 +653,24 @@ li{
     }
 
     .top__logo{
+      width: fit-content;
       justify-content: left;
     }
+
+    .login {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+
+    nav .heading{
+      width: fit-content;      
+      margin-right: 5em;
+    }
+
+    nav .media img {
+      align-self: center;
+      height: 40px;
+    }
+
   
   }
