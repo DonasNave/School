@@ -3,6 +3,9 @@
   <head>
     <metacharset="UTF-8"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/WEB-project/styles/all.min.css">
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -25,6 +28,7 @@
       <div id="header"></div>
         
         <main>
+
           <div class="location">           
             <div class="location__text">
               <div class="pagename">Courses detail</div>
@@ -32,12 +36,13 @@
             </div>              
           </div>
           
-          <div>
+          <div class="course--detail">
 
             <section>
 
-              <video></video>
-            
+
+
+              <img src="./pictures/mainpage/people.jpg">
               <!-- stars -->
 
               <h1>How To Improve Web Design Skills</h1>
@@ -58,12 +63,47 @@
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas aliquet 
                 accumsan leo. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                 consequat.</p>
-
-
-              <div class="list-courses">
-              </div>
             
-              <img src="./pictures/mainpage/people.jpg">
+              <div class="lessons--list">
+                <div class="lesson">
+                  <p>Lesson 01: Introduced About Web Design</p>
+                  <div>
+                    <i class="far fa-play-circle"></i>
+                    05:59 hr
+                  </div>
+                </div>
+                <div class="lesson">
+                  <p>Lesson 02: What Is UX/UI Design ?</p>
+                  <div>
+                    <i class="far fa-play-circle"></i>
+                    05:59 hr
+                  </div>
+                </div>
+                <div class="lesson">
+                  <p>Lesson 03: Why Need UX/UI Role In Web Design ?</p>
+                  <div>
+                    <i class="far fa-play-circle"></i>
+                    05:59 hr
+                  </div>
+                </div>
+                <div class="lesson">
+                  <p>Lesson 04: What Is UX Manager ?</p>
+                  <div>
+                    <i class="far fa-play-circle"></i>
+                    05:59 hr
+                  </div>
+                </div>
+                <div class="lesson">
+                  <p>Lesson 05: What's Your Design Goals?</p>
+                  <div>
+                    <i class="far fa-play-circle"></i>
+                    05:59 hr
+                  </div>
+                </div>
+
+              </div>
+
+              <img src="./pictures/mainpage/writing.jpg">
 
               <h2>Frequently asked questions</h2>
 
@@ -71,80 +111,154 @@
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
 
 
-              <div class="list-fa-questions">
-
-                <div class="dropdown-fa-question">
-                  <p class="dropbtn-fa-question">Home</p>
-                  <div class="dropdown-content-fa-questions">
-                    <a href="./about-us.html">About us</a>
+              <div class="questions--list">
+                <div class="question">
+                  <div class="question--heading">
+                    <p>Best Online Course For Basic Web Design For Beginners</p>
+                    <i class="fas fa-angle-right"></i>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="description">
+                    <img src="/WEB-project/pictures/media/group-students.jpg">
+                    <p>Etiam posuere lacus quis dolor. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nullam sit amet magna in magna gravida vehicula. Vivamus ac leo pretium faucibus.
+                       Aenean vel massa quis mauris vehicula lacinia. Maecenas libero.</p>
                   </div>
                 </div>
-
-                <div class="dropdown-fa-question">
-                  <p class="dropbtn-fa-question">Home</p>
-                  <div class="dropdown-content-fa-questions">
-                    <a href="./about-us.html">About us</a>
+                <div class="question">
+                  <div class="question--heading">
+                    <p>Why We Are The Best Online Courses</p>
+                    <i class="fas fa-angle-right"></i>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="description">
+                    <img src="/WEB-project/pictures/media/group-students.jpg">
+                    <p>Etiam posuere lacus quis dolor. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nullam sit amet magna in magna gravida vehicula. Vivamus ac leo pretium faucibus.
+                       Aenean vel massa quis mauris vehicula lacinia. Maecenas libero.</p>
                   </div>
                 </div>
-
-                <div class="dropdown-fa-question">
-                  <p class="dropbtn-fa-question">Home</p>
-                  <div class="dropdown-content-fa-questions">
-                    <a href="./about-us.html">About us</a>
+                <div class="question">
+                  <div class="question--heading">
+                    <p>Creating Secure Password Flows With NodeJS And MySQL</p>
+                    <i class="fas fa-angle-right"></i>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="description">
+                    <img src="/WEB-project/pictures/media/group-students.jpg">
+                    <p>Etiam posuere lacus quis dolor. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nullam sit amet magna in magna gravida vehicula. Vivamus ac leo pretium faucibus.
+                       Aenean vel massa quis mauris vehicula lacinia. Maecenas libero.</p>
                   </div>
                 </div>
-
-                <div class="dropdown-fa-question">
-                  <p class="dropbtn-fa-question">Home</p>
-                  <div class="dropdown-content-fa-questions">
-                    <a href="./about-us.html">About us</a>
+                <div class="question">
+                  <div class="question--heading">
+                    <p>Creating Secure Password Flows With NodeJS And MySQL</p>
+                    <i class="fas fa-angle-right"></i>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="description">
+                    <img src="/WEB-project/pictures/media/group-students.jpg">
+                    <p>Etiam posuere lacus quis dolor. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nullam sit amet magna in magna gravida vehicula. Vivamus ac leo pretium faucibus.
+                       Aenean vel massa quis mauris vehicula lacinia. Maecenas libero.</p>
                   </div>
                 </div>
+               
+
               </div>
 
 
               <h2>Course Instructors</h2>
 
-              <div class="list-instructors-courses">
-                <div>
-                  <img>
-                  <p>Name Surname</p>
-                  <p>Teaches XYZ</p>
-                </div>
+              <div class="instructors--list">
+                <div class= "row">
+                  <div class="lector">
+                    <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    <h2>Name Surname</h2>
+                    <h3>Teaches XYZ</h3>
+                   </div>
 
-                <div>
-                  <img>
-                  <p>Name Surname</p>
-                  <p>Teaches XYZ</p>
-                </div>
+                   <div class="lector">
+                    <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    <h2>Name Surname</h2>
+                    <h3>Teaches XYZ</h3>
+                   </div>
+                 </div>  
 
-                <div>
-                  <img>
-                  <p>Name Surname</p>
-                  <p>Teaches XYZ</p>
-                </div>
+                <div class= "row">
+                  <div class="lector">
+                    <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    <h2>Name Surname</h2>
+                    <h3>Teaches XYZ</h3>
+                   </div>
 
-                <div>
-                  <img>
-                  <p>Name Surname</p>
-                  <p>Teaches XYZ</p>
+                   <div class="lector">
+                    <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    <h2>Name Surname</h2>
+                    <h3>Teaches XYZ</h3>
+                   </div>
                 </div>
               </div>
 
             </section>
+
+            <aside>
+              <div class="course--stats">
+                <div class="item">
+                  <div class="name">
+                    <i class="fab fa-bitcoin"></i>
+                    <h3>Course Price</h3>
+                  </div>
+                  <p>$59</p>
+                </div>
+                <div class="item">
+                  <div class="name">
+                    <i class="far fa-user-circle"></i>
+                    <h3>Instructor</h3>
+                  </div>
+                  <p>David Warner</p>
+                </div>
+                <div class="item">
+                  <div class="name">
+                    <i class="far fa-clock"></i>
+                    <h3>Duration</h3>
+                  </div>
+                  <p>360 Hours</p>
+                </div>
+                <div class="item">
+                  <div class="name">
+                    <i class="fas fa-book"></i>
+                    <h3>Lectures</h3>
+                  </div>
+                  <p>20 Lessons</p>
+                </div>
+                <div class="item">
+                  <div class="name">
+                    <i class="fas fa-users"></i>
+                    <h3>Enrolled</h3>
+                  </div>
+                  <p>963 Students</p>
+                </div>
+                <div class="item">
+                  <div class="name">
+                    <i class="fas fa-flag"></i>
+                    <h3>Language</h3>
+                  </div>
+                  <p>English</p>
+                </div>
+                <div class="last item">
+                  <div class="name">
+                    <i class="far fa-calendar-alt"></i>
+                    <h3>Deadline</h3>
+                  </div>
+                  <p>06 March 2021</p>
+                </div>
+                <a href="#">
+                  <button class="enroll--button">Get Enrolled <i class="fas fa-arrow-right"></i></button>
+                </a>
+              </div>
+              <img src="/WEB-project/pictures/header/students.jpg">
+            </aside>
+
           </div>
-
-          <aside>
-            
-            <div class="list-info-courses">
-
-
-
-            </div>
-
-            <img>
-
-          </aside>
+          
 
         </main>
 
