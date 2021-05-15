@@ -3,6 +3,9 @@
   <head>
     <metacharset="UTF-8"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/WEB-project/styles/all.min.css">
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -31,25 +34,23 @@
             </div>              
           </div>
 
-          <div>
+          <div class="event--detail">
+            <div class="event--article">
+              <div class="event--heading">
+                <div class="holder">
+                  <h1>Annual Conference 2021</h1>
 
-            <section>
-
-              <h1>Annual Conference 2021</h1>
-
-              <div class="details-event">
-                
-                <div class="list-inline-event details-item-event">
-                  <p>25 June 2021</p>
-                  <p>Sat - Friday, 08am - 09pm</p>
-                  <p>250 Main Street, USA</p>
-                  <p>New York Musem</p>
+                  <div class="details">
+                    <p><i class="far fa-calendar-alt"></i> 25 June 2021</p>
+                    <p><i class="far fa-clock"></i> Sat - Friday, 08am - 09pm</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 250 Main Street, USA</p>
+                    <p><i class="fas fa-home"></i> New York Musem</p>
+                  </div>
                 </div>
-
-                <button class="details-item-event">$20</button>
-                
-                <button class="details-item-event">Join event</button>
-
+                <div class="buttons">
+                  <button class="blue defbutton">$20</button>
+                  <button class="defbutton">Join event</button>
+                </div>
               </div>
 
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc tincidunt ante vitae massa. 
@@ -58,7 +59,7 @@
                 Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Integer pellentesque quam vel velit. Nulla quis diam. 
                 Etiam bibendum elit eget erat. Suspendisse sagittis ultrices augue.</p>
 
-              <img src="./pictures/mainpage/people.jpg">
+              <img class="img--main" src="./pictures/mainpage/people.jpg">
 
               <p>Nullam at arcu a est sollicitudin euismod. Nulla pulvinar eleifend sem. Donec iaculis gravida nulla. 
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas aliquet 
@@ -69,66 +70,70 @@
                 consequat.</p>
 
 
-              <div class="column-courses">
-                <div>
+              <div class="event--importance">
+                <div class="text">
                   <h1>Importance Of Events</h1>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc tincidunt ante vitae massa. 
                     Pellentesque pretium lectus id turpis. Nullam dapibus fermentum ipsum. Donec iaculis gravida nulla. 
                     Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
                   <ul>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
+                    <li><i class="far fa-check-circle"></i>Create Secure Password Flows With NodeJS And MySQL</li>
+                    <li><i class="far fa-check-circle"></i>Create Secure Password Flows With NodeJS And MySQL</li>
+                    <li><i class="far fa-check-circle"></i>Create Secure Password Flows With NodeJS And MySQL</li>
+                    <li><i class="far fa-check-circle"></i>Create Secure Password Flows With NodeJS And MySQL</li>
+                    <li><i class="far fa-check-circle"></i>Create Secure Password Flows With NodeJS And MySQL</li>
                   </ul>
                 </div>
 
-                <div>
-                  <img>
-                </div>
+                <img class="map" src="/WEB-project/pictures/media/map.jpg">
               </div>
-
-            </section>
-
+            </div>
             <!-- cara -->
 
-            <section>
-              <div class="list-conferences-events">
-                <div>
-                  <img>
-                  <div class="circle-price-events">$20</div>
-                  <div class="inline-test-list-events">
-                    <div>25 JUL 2021</div>
-                    <div>08 AM - 09 PM</div>
-                  </div>
-                  <p>Annual Conference 2021</p>
-                  <p>JOIN EVENT/p>
-                </div>
+           
+            <div class="conferences">
+              <div class="content">
+                <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
 
-                <div>
-                  <img>
-                  <div class="circle-price-events">$20</div>
-                  <div class="inline-test-list-events">
-                    <div>25 JUL 2021</div>
-                    <div>08 AM - 09 PM</div>
+                <div class="frame">
+                  <div class="frame--price">$20</div>
+                  <div class="frame--info">
+                    <p><i class="far fa-calendar-alt"></i> 25 June 2021</p>
+                    <p><i class="far fa-clock"></i> 08am - 09pm</p>
                   </div>
-                  <p>PHP Conference 2021</p>
-                  <p>JOIN EVENT/p>
-                </div>
-
-                <div>
-                  <img>
-                  <div class="circle-price-events">$20</div>
-                  <div class="inline-test-list-events">
-                    <div>25 JUL 2021</div>
-                    <div>08 AM - 09 PM</div>
-                  </div>
-                  <p>Design Conference 2021</p>
-                  <p>JOIN EVENT/p>
+                  <p class="frame--name">Annual Conference 2021</p>
+                  <p>JOIN EVENT</p>
                 </div>
               </div>
-            </section>
+
+              <div class="content">
+                <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
+
+                <div class="frame">
+                  <div class="frame--price">$20</div>
+                  <div class="frame--info">
+                    <p><i class="far fa-calendar-alt"></i> 25 June 2021</p>
+                    <p><i class="far fa-clock"></i> 08am - 09pm</p>
+                  </div>
+                  <p class="frame--name">Annual Conference 2021</p>
+                  <p>JOIN EVENT</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
+
+                <div class="frame">
+                  <div class="frame--price">$20</div>
+                  <div class="frame--info">
+                    <p><i class="far fa-calendar-alt"></i> 25 June 2021</p>
+                    <p><i class="far fa-clock"></i> 08am - 09pm</p>
+                  </div>
+                  <p class="frame--name">Annual Conference 2021</p>
+                  <p>JOIN EVENT</p>
+                </div>
+              </div>
+            </div>
 
           </div>
 
