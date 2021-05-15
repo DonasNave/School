@@ -1248,6 +1248,7 @@ h2 {
 .event--detail .conferences {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   height: fit-content;
 }
