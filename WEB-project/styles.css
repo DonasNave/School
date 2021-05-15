@@ -1260,9 +1260,9 @@ h2 {
 }
 
 .event--detail .conferences img {
-  width: 20em;
-  height: 15em;
   object-fit: cover;
+  width: 22em;
+  height: 18em;
   position: relative;
   display: block;
 }
@@ -1284,8 +1284,8 @@ h2 {
   align-items: center;
   border-radius: 50%;
   position: relative;
-  left: 13em;
-  top: -3em
+  left: 14em;
+  top: -5em
 }
 
 .event--detail .frame .frame--info {
@@ -1309,6 +1309,349 @@ h2 {
 
 /* EVENT--DETAIL part END */
 
+/* INSTRUCTOR--DETAIL part */
+
+.instructor--detail {
+  background-color: #e9f3f7;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor--detail .column {  
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.instructor--cards {
+  padding: 5%;
+}
+
+.instructor--cards .row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.instructor--cards .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 1em;
+}
+
+.instructor--cards p {
+  margin: 1em;
+}
+
+.instructor--cards .photo--description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.instructor--cards .holder {
+  justify-content: center;
+}
+
+.instructor--cards .card img {
+  width: 20em;
+}
+
+.instructor--cards .socials--square {
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+  color: black;
+  justify-content: center;
+}
+.instructor--cards .centered {
+  justify-content: space-evenly;
+}
+
+.instructor--cards .holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.instructor--cards .card .centered img {
+  padding: 1em;
+  width: 10em;
+}
+
+/* INSTRUCTOR--DETAIL part END */
+
+/* FAQ--QUESTIONS part */
+
+.faq--questions {
+  display: flex;
+  flex-direction: row;
+  background-color: #e9f3f7;
+  padding: 5% 0;
+}
+
+.faq--questions .row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  justify-content: center;
+}
+
+.faq--questions .column {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  width: 50%;
+}
+
+.faq--questions .leader {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.right--align {
+  justify-content: end;
+  align-items: flex-end;
+  margin-left: 10%;
+}
+
+.faq--questions .faq--list {
+  background-color: white;
+  align-items: flex-start;
+  padding: 5%;
+  margin: 2em;
+  margin-right: 10%;
+  width: 70%;
+}
+
+.faq--questions .card {
+  background-color: white;
+  padding: 5%;
+  margin: 2em;
+  text-align: center;  
+  width: 95%;
+  min-width: fit-content;
+}
+
+.faq--list .underlined {
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 0.001em solid rgba(133, 133, 133, 0.247);
+}
+.faq--questions .card .far {
+  position: relative;
+  left: 45%;
+  top: -2em;
+}
+.faq--questions .card .holder {
+  width: 0;
+}
+
+.faq--questions .card input {
+  height: 4em;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.faq--questions .card .long {
+  height: 10em;
+}
+
+.career--info {
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.career--info .recruitment {
+  padding: 2em;
+  color: white;    
+  padding: 5% 10%;
+}
+
+.career--info .recruitment h1 {
+  color: white;  
+}
+
+.career--info .right {  
+  background-color: rgb(26, 7, 134);
+}
+
+.career--info .left {
+  background-color: rgb(45, 24, 165);
+}
+
+.career--info .defbutton {
+  border-radius: 10em;
+}
+
+.career--info .blue {
+  background-color: #3473f0;
+}
+
+/* FAQ--QUESTIONS part END*/
+
+/* CONTACT part END*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9f3f7;
+  padding: 5% 10%;
+}
+
+.contact .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+
+}
+
+.form--message {
+  text-align: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.form--message .credentials {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form--message .row .fas {
+  position: relative;
+  left: -25%;
+}
+
+.form--message .row input {
+  height: 5em;
+  padding: 2em;
+  width: 30em;
+}
+
+.form--message .text--area {
+  width: 100%;
+  height: 15em;
+  margin: 2em;
+  min-width: 30em;
+  padding-bottom: 10em;
+}
+
+.address img {
+  width: 50%;
+  object-fit: cover;
+  padding: 5em;
+}
+
+/* CONTACT part END*/
+
+/* blog--layout part END*/
+
+.blog--layout {
+  display: flex;
+  flex-direction: row;
+  background-color: #e9f3f7;
+  padding: 5% 10%;
+}
+
+.blog--layout .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blog--layout .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog--layout article {  
+  background-color: white;
+  margin: 5% 0;
+}
+
+.blog--layout article .text {
+  padding: 3em;
+}
+
+.blog--layout .blue {
+  background-color: #3473f0;
+  color: white;
+}
+
+.blog--layout .column--main {
+  width: 65%;
+  margin: 0 1.5%;
+}
+
+.blog--layout .column--secondary {
+  width: 35%;
+  margin: 1.5%;
+}
+
+.blog--layout .column--secondary .news img {
+  width: 15em;
+  height: 7em;
+  object-fit: cover;
+}
+
+.blog--layout .column--secondary .photo--gallery img {
+  width: 9em;
+  height: 9em;
+  object-fit: cover;
+}
+
+.blog--layout .column--main h2 {
+  color: white;
+  background-color: #e95721;
+  padding: 0.3em 1.5em;
+  border-radius: 0.5em;
+  width: fit-content;
+}
+
+.blog--layout .filter {
+  background:none;
+}
+
+.blog--layout .filter div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 3em;
+  margin: 0.2em 0;
+}
+
+.blog--layout .filter div:hover {
+  background-color: #e95721;
+  color: white;
+}
+
+.tags .row {
+  flex-wrap: flex;
+}
+
+.blog--layout .img--aside {
+  height: 30em;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* blog--layout part END*/
 
 li{
   margin: 0px 0px 10px 0px;

@@ -3,6 +3,10 @@
   <head>
     <metacharset="UTF-8"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/WEB-project/styles/all.min.css">
+
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -32,67 +36,66 @@
             </div>              
           </div>
 
-          <div>
+          <div class="contact">
 
-            <div> <!-- Mapa cast -->
+            <div class="row address"> <!-- Mapa cast -->
               <div>
-                <p>ooo Quick Contact</p>
+                <p>▪▪▪ Quick Contact</p>
                 <p><h1>Get In Touch</h1></p>
                 <p>Sed ut perspiciati unde omnis iste natus error sit voluptatem accusanc doloremque laudantium totam rem aperiam qaque ipsa queae.</p>
-                <div>
-                  <img>
-                  <div>
+                <div class="row">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="column">
                     <h2>Locations</h2>
                     <h3>250 Main Street, New York</h3>
                   </div>
                 </div>
-                <div>
-                  <img>
-                  <div>
+                <div class="row">
+                  <i class="fas fa-envelope"></i>
+                  <div class="column">
                     <h2>Email Us</h2>
                     <h3>support@gmail.com</h3>
                   </div>
-                </div>
+                </div class="row">
                 <div>
-                  <img>
-                  <div>
+                  <i class="fas fa-phone"></i>
+                  <div class="column">
                     <h2>Phone Us</h2>
                     <h3>+012 (345) 6789 99</h3>
                   </div>
                 </div>
-                <br>
-                <div>
-                  <img>
-                  <img>
-                  <img>
-                  <img>
+
+                <div class="row">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>                  
+                  <i class="fab fa-youtube"></i>
+                  <i class="fab fa-linkedin"></i>
                 </div>
               </div>
 
-              <div>
-                <img>
-              </div>
+              <img src="/WEB-project/pictures/media/map.jpg">
 
             </div>
 
-            <div> <!-- Message cast -->
-              <h2>ooo Get In Touch</h2>
+            <div class="column form--message"> <!-- Message cast -->
+              <h2>▪▪▪ Get In Touch ▪▪▪</h2>
               <h1>Leave Us Message</h1>
-              <div>
-                <div>
-                  <input>
+              <div class="row credentials">
+                <div class="row">
+                  <input value="Full Name">
+                  <i class="fas fa-user"></i>
                 </div>
-                <div>
-                  <input>
+                <div class="row">
+                  <input value="Email Adress">
+                  <i class="fas fa-envelope"></i>
                 </div>
-                <div>
-                  <input>
+                <div class="row">
+                  <input value="Phone Number">
+                  <i class="fas fa-phone"></i>
                 </div>
               </div>
-              <div>
-                <input>
-              </div>
-              <button>Send Message ---></button>
+              <input class="text--area" value="Write Message">
+              <button class="defbutton">Send Message ---></button>
             </div>
 
           </div>

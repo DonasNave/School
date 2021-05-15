@@ -3,7 +3,9 @@
   <head>
     <metacharset="UTF-8"/>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/WEB-project/styles/all.min.css">
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -25,105 +27,498 @@
         
         <main>
           
-          <div>
+          
+          <div class="location">           
+            <div class="location__text">
+              <div class="pagename">Instructor Detail</div>
+              <div class="path">Home > Instructors > Instructor Detail</div>
+            </div>              
+          </div>
 
-            <section>
+          <div class="instructor--detail">
 
-              <h1>Annual Conference 2021</h1>
+            <div class="instructor--cards">
 
-              <div class="details-event">
-                
-                <div class="list-inline-event details-item-event">
-                  <p>25 June 2021</p>
-                  <p>Sat - Friday, 08am - 09pm</p>
-                  <p>250 Main Street, USA</p>
-                  <p>New York Musem</p>
+              <div class="row">
+                <div class="card">
+                  <img src="/WEB-project/pictures/people/guy1.jpg">
+                  <div class="photo--description">
+                    <div class="holder">
+                      <div class="name">
+                        <h2>Somalia D Silva</h2>
+                        <h4>Math Teacher</h4>
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i> 750+ Courses
+                      </div>
+                    </div>
+                    <div class="socials--square">
+                      <div class="row">
+                        <i class="fas fa-facebook"></i>
+                        <i class="fas fa-twitter"></i>
+                      </div>
+                      <div class="row">
+                        <i class="fab fa-facebook-f"></i> 
+                        <i class="fas fa-twitter"></i>
+                      </div>
+                    </div>
+
+                  </div>
+
                 </div>
 
-                <button class="details-item-event">$20</button>
-                
-                <button class="details-item-event">Join event</button>
+                <div class="card">
+                  <h2>About Me</h2>
+                  <p>Sed magna eros, consequat ut erat vel, 
+                    eleifend molestie mauris. Etiam sed gravida dui. Sed urna 
+                    turpis, blandit eget purus ac, maximus rutrum lectus. Maecenas
+                    neque felis, venenatis vitae dolor sit amet, venenatis euismod
+                    massa. Maecenas ultrices velit eu turpis volutpat dapibus.
+                    Curabitur non nisi vitae massa mollis viverra eu vitae diam.
+                    Mauris non nibh in ipsum lacinia consectetur. Pellentesque 
+                    habitant morbi tristique senectus et netus et malesuada fames
+                     ac turpis egestas. Sed bibendum risus in vehicula ornare.</p>
+                  <p>Donec viverra vel nisi nec vulputate. Aenean vehicula 
+                    porttitor diam quis condimentum. Aenean sed nisl non augue 
+                    commodo ultrices faucibus ac metus. Vestibulum ut maximus 
+                    lorem, ut facilisis ex. Praesent at libero tempor, venenatis
+                     ante et, faucibus massa. Nulla facilisi. Praesent sed 
+                     hendrerit libero. In suscipit tincidunt arcu. In vitae sem
+                      ligula. Aliquam ultricies enim in interdum pellentesque.</p>
+                  <div class="centered row">
+                    <div class="row">
+                      <div class="holder">
+                        <i class="fas fa-users"></i>
+                      </div>
+                      <div class="holder"> 
+                        <h2>3045+</h2>
+                        <h3>Satisfied Students</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="holder">
+                        <i class="fas fa-book"></i>
+                      </div>
+                      <div class="holder">
+                        <h2>7852+</h2>
+                        <h3>Available Courses</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
               </div>
-
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc tincidunt ante vitae massa. 
-                Pellentesque pretium lectus id turpis. Nullam dapibus fermentum ipsum. Donec iaculis gravida nulla. 
-                Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Integer tempor. Aenean placerat. 
-                Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Integer pellentesque quam vel velit. Nulla quis diam. 
-                Etiam bibendum elit eget erat. Suspendisse sagittis ultrices augue.</p>
-
-              <img src="./pictures/mainpage/people.jpg">
-
-              <p>Nullam at arcu a est sollicitudin euismod. Nulla pulvinar eleifend sem. Donec iaculis gravida nulla. 
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas aliquet 
-                accumsan leo. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat. Nullam at arcu a est sollicitudin euismod. Nulla pulvinar eleifend sem. Donec iaculis gravida nulla. 
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas aliquet 
-                accumsan leo. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                consequat.</p>
-
-
-              <div class="column-courses">
-                <div>
-                  <h1>Importance Of Events</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc tincidunt ante vitae massa. 
-                    Pellentesque pretium lectus id turpis. Nullam dapibus fermentum ipsum. Donec iaculis gravida nulla. 
-                    Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
-                  <ul>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                    <li>Create Secure Password Flows With NodeJS And MySQL</li>
-                  </ul>
+            
+              <div class="row">
+                <div class="card">
+                  <h2>Certification</h2>
+                  <p>Sed magna eros, consequat ut erat vel, 
+                    eleifend molestie mauris. Etiam sed gravida dui. Sed urna 
+                    turpis, blandit eget purus ac, maximus rutrum lectus. Maecenas
+                    neque felis, venenatis vitae dolor sit amet, venenatis euismod
+                    massa. Maecenas ultrices velit eu turpis volutpat dapibus.</p>
+                 
+                  <div class="centered row">
+                    <img src="/WEB-project/pictures/media/map.jpg">
+                    <img src="/WEB-project/pictures/media/map.jpg">
+                    <img src="/WEB-project/pictures/media/map.jpg">
+                  </div>
                 </div>
 
-                <div>
-                  <img>
-                </div>
-              </div>
+                <div class="card">
+                  <h2>Education</h2>                  
+                  <div class="centered row">
+                    <div class="row">
+                      <div class="holder">
+                        <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <div class="holder"> 
+                        <h2>World University+</h2>
+                        <h3>Computer Science</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="holder">
+                        <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <div class="holder">
+                        <h2>World University</h2>
+                        <h3>Web Design</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="centered row">
+                    <div class="row">
+                      <div class="holder">
+                        <i class="fas fa-drafting-compass"></i>
+                      </div>
+                      <div class="holder"> 
+                        <h2>Graphic Designer</h2>
+                        <h3>Behance.net</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="holder">
+                        <i class="fas fa-drafting-compass"></i>
+                      </div>
+                      <div class="holder">
+                        <h2>Web Developer</h2>
+                        <h3>Themeforest.net</h3>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+              </div>           
 
-            </section>
+            </div>
 
             <!-- cara -->
 
-            <section>
-              <div class="list-conferences-events">
-                <div>
-                  <img>
-                  <div class="circle-price-events">$20</div>
-                  <div class="inline-test-list-events">
-                    <div>25 JUL 2021</div>
-                    <div>08 AM - 09 PM</div>
-                  </div>
-                  <p>Annual Conference 2021</p>
-                  <p>JOIN EVENT/p>
-                </div>
+            <div class="column">
+              <h1>Popular Courses</h1>
+              <div class="course--gallery">
 
-                <div>
-                  <img>
-                  <div class="circle-price-events">$20</div>
-                  <div class="inline-test-list-events">
-                    <div>25 JUL 2021</div>
-                    <div>08 AM - 09 PM</div>
-                  </div>
-                  <p>PHP Conference 2021</p>
-                  <p>JOIN EVENT/p>
-                </div>
 
-                <div>
-                  <img>
-                  <div class="circle-price-events">$20</div>
-                  <div class="inline-test-list-events">
-                    <div>25 JUL 2021</div>
-                    <div>08 AM - 09 PM</div>
-                  </div>
-                  <p>Design Conference 2021</p>
-                  <p>JOIN EVENT/p>
+                <div class="menu">
+                  <div class="highlited section">Show all</div>
+                  <div class="section">Design</div>
+                  <div class="section">Computer</div>
+                  <div class="section">Development</div>
+                  <div class="section">Medical</div>
+                  <div class="section">Photography</div>
+                  <div class="section">Marketing</div>
+                  <div class="section">Driving</div>
+                  <div class="section">Business</div>
                 </div>
+  
+                <div class="listing"> <!--cast sekce-->
+                  <div class="row"> <!-- radek -->
+  
+                    <div class="course">
+                      <div class="standart">
+  
+                        <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+        
+                        <div class="holder teacher">
+                          <img src="/WEB-project/pictures/people/guy1.jpg">
+                          Warner
+                        </div>
+                        <div class="holder">
+                          <div class="orange price"><span>$59</span></div>
+                        </div>
+                        <div class="bottom">
+                          <div class="info">
+                            <div class="blue highlited section">
+                              English
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+  
+                          <h1>
+                            Best Courses For Learning English Courses
+                          </h1>
+  
+                          <div class="stats">
+                            <div class="item">
+                              <i class="fas fa-users"></i>
+                              25
+                            </div>
+                            <div class="item">
+                              <i class="far fa-clock"></i>
+                              36hr
+                            </div>
+                            <div class="item">
+                              <i class="far fa-comments"></i>
+                              2.5k
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+  
+                    </div>
+  
+                    <div class="course">
+                      <div class="standart">
+  
+                        <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+        
+                        <div class="holder teacher">
+                          <img src="/WEB-project/pictures/people/guy1.jpg">
+                          Warner
+                        </div>
+                        <div class="holder">
+                          <div class="orange price"><span>$59</span></div>
+                        </div>
+                        <div class="bottom">
+                          <div class="info">
+                            <div class="blue highlited section">
+                              English
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+  
+                          <h1>
+                            Best Courses For Learning English Courses
+                          </h1>
+  
+                          <div class="stats">
+                            <div class="item">
+                              <i class="fas fa-users"></i>
+                              25
+                            </div>
+                            <div class="item">
+                              <i class="far fa-clock"></i>
+                              36hr
+                            </div>
+                            <div class="item">
+                              <i class="far fa-comments"></i>
+                              2.5k
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+  
+                    </div>
+  
+                    <div class="course">
+                      <div class="standart">
+  
+                        <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+        
+                        <div class="holder teacher">
+                          <img src="/WEB-project/pictures/people/guy1.jpg">
+                          Warner
+                        </div>
+                        <div class="holder">
+                          <div class="orange price"><span>$59</span></div>
+                        </div>
+                        <div class="bottom">
+                          <div class="info">
+                            <div class="blue highlited section">
+                              English
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+  
+                          <h1>
+                            Best Courses For Learning English Courses
+                          </h1>
+  
+                          <div class="stats">
+                            <div class="item">
+                              <i class="fas fa-users"></i>
+                              25
+                            </div>
+                            <div class="item">
+                              <i class="far fa-clock"></i>
+                              36hr
+                            </div>
+                            <div class="item">
+                              <i class="far fa-comments"></i>
+                              2.5k
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+                 
+  
+                    </div>                
+  
+                  </div>
+  
+  
+                  <div class="row"> <!-- radek -->
+  
+                    <div class="course">
+                      <div class="standart">
+  
+                        <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+        
+                        <div class="holder teacher">
+                          <img src="/WEB-project/pictures/people/guy1.jpg">
+                          Warner
+                        </div>
+                        <div class="holder">
+                          <div class="orange price"><span>$59</span></div>
+                        </div>
+                        <div class="bottom">
+                          <div class="info">
+                            <div class="blue highlited section">
+                              English
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+  
+                          <h1>
+                            Best Courses For Learning English Courses
+                          </h1>
+  
+                          <div class="stats">
+                            <div class="item">
+                              <i class="fas fa-users"></i>
+                              25
+                            </div>
+                            <div class="item">
+                              <i class="far fa-clock"></i>
+                              36hr
+                            </div>
+                            <div class="item">
+                              <i class="far fa-comments"></i>
+                              2.5k
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+  
+                    </div>
+  
+                    <div class="course">
+                      <div class="standart">
+  
+                        <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+        
+                        <div class="holder teacher">
+                          <img src="/WEB-project/pictures/people/guy1.jpg">
+                          Warner
+                        </div>
+                        <div class="holder">
+                          <div class="orange price"><span>$59</span></div>
+                        </div>
+                        <div class="bottom">
+                          <div class="info">
+                            <div class="blue highlited section">
+                              English
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+  
+                          <h1>
+                            Best Courses For Learning English Courses
+                          </h1>
+  
+                          <div class="stats">
+                            <div class="item">
+                              <i class="fas fa-users"></i>
+                              25
+                            </div>
+                            <div class="item">
+                              <i class="far fa-clock"></i>
+                              36hr
+                            </div>
+                            <div class="item">
+                              <i class="far fa-comments"></i>
+                              2.5k
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+  
+                    </div>
+  
+                    <div class="course">
+                      <div class="standart">
+  
+                        <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+        
+                        <div class="holder teacher">
+                          <img src="/WEB-project/pictures/people/guy1.jpg">
+                          Warner
+                        </div>
+                        <div class="holder">
+                          <div class="orange price"><span>$59</span></div>
+                        </div>
+                        <div class="bottom">
+                          <div class="info">
+                            <div class="blue highlited section">
+                              English
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+  
+                          <h1>
+                            Best Courses For Learning English Courses
+                          </h1>
+  
+                          <div class="stats">
+                            <div class="item">
+                              <i class="fas fa-users"></i>
+                              25
+                            </div>
+                            <div class="item">
+                              <i class="far fa-clock"></i>
+                              36hr
+                            </div>
+                            <div class="item">
+                              <i class="far fa-comments"></i>
+                              2.5k
+                            </div>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+                 
+  
+                    </div>                
+  
+                  </div>
+  
+                </div>
+  
+            </div>
+
+              <div class="row">
+
               </div>
-            </section>
 
+            </div>
+              
           </div>
 
         </main>
