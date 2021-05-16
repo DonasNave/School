@@ -1738,8 +1738,23 @@ h2 {
     color: white;
     padding-top: 5%;
     padding-bottom: 2%;
-
   }
+
+  .main--search{
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 55%;
+  }
+
+  .main--layout .holder{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    
+    width: 100%;
+  }
+
 
 /* main--layout part END*/
 
