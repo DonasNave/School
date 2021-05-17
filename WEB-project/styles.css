@@ -3400,6 +3400,14 @@ li{
     }
 
 
+    .instructor--cards .centered{
+      height: 100%;
+    }
+
+    .instructor--cards .holder{
+      justify-content: center;
+    }
+
     .heading .signin {
       display: none;
     }
