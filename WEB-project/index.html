@@ -6,13 +6,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/WEB-project/styles/all.min.css">
+        
 
         <script
           src="https://code.jquery.com/jquery-3.3.1.js"
           integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
           crossorigin="anonymous">
         </script>
+
+        <script src="./scripts.js"></script>
         
+        <!-- jedine vyuziti JQUERY, obdobne v dalsich strankach -->
         <script> 
           $(function(){
           $("#footer").load("footer.html"); 
@@ -21,8 +25,7 @@
 
     </head>
 
-    <body>
- 
+    <body> 
      
       <nav style="background: none; position: absolute;">   
         <div class="heading">
@@ -116,16 +119,16 @@
                   Welcome To EduPlus
                 </h2>
                 <h1>More Than 1200 Online Courses</h1>
-                <div>
+                <div class="search">
                   <input value="Search Courses">
                   <i class="fas fa-angle-down"></i>
                   <button class="defbutton"><i class="fas fa-search"></i></button>
                 </div>
                 <div>
                   <p>Etiam scelerisque molestie ligula, molestie mollis massa. </p>
-                  <div>
+                  <div class="row">
                     <i class="fas fa-headset"></i>
-                    <div>
+                    <div class="column">
                       <p>ONLINE SUPPORT</p>
                       <h3>+023 (345) 6778</h3>
                     </div>
@@ -137,12 +140,11 @@
 
            
         </div>
-
         
         <div class="statistics">
           <div class="card">
-            <div>
-              <img src="icons/facebook-logo.svg">
+            <div class="holder">
+              <i class="fas fa-users"></i>
             </div>
             <div>
               <h2>3045+</h2>
@@ -151,8 +153,8 @@
           </div>
 
           <div class="card">
-            <div>
-              <img src="icons/facebook-logo.svg">
+            <div class="holder">
+              <i class="fas fa-book"></i>
             </div>
             <div>
               <h2>7852+</h2>
@@ -161,8 +163,8 @@
           </div>
 
           <div class="card">
-            <div>
-              <img src="icons/facebook-logo.svg">
+            <div class="holder">
+              <i class="fas fa-graduation-cap"></i>
             </div>
             <div>
               <h2>9862+</h2>
@@ -171,8 +173,8 @@
           </div>
 
           <div class="card">
-            <div>
-              <img src="icons/facebook-logo.svg">
+            <div class="holder">
+              <i class="fas fa-laptop-code"></i>
             </div>
             <div>
               <h2>8963+</h2>
@@ -182,9 +184,221 @@
         </div>
 
         <div class="course--categories">
+          <div class="lectors">
 
+            <div class="standart--heading">
+              <div class="introduction">
+                ▪▪▪ Popular Categories ▪▪▪
+              </div>
+    
+              <h1>Course Categories</h1>
+            </div>
+    
+            <div class="course--cards lectors--cards">
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-1.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Algebra</h2>
+                    <h4>Math Course</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        98
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        30+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-2.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Online Teaching</h2>
+                    <h4>Lector's course</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        120
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        31+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-3.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>PHP Programming</h2>
+                    <h4>Web Design Course</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        320
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        750+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-4.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Photography </h2>
+                    <h4>Artistic course</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        890
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        90+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>          
+            </div>
+            <div class="course--cards lectors--cards">
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-5.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Basic Statistics</h2>
+                    <h4>Economics</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        1035
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        150+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-6.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Advanced Statistics</h2>
+                    <h4>Economics</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        253
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        50+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-7.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Management</h2>
+                    <h4>Economics</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        520
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        75+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="photo" src="/WEB-project/pictures/courses/course-8.jpg">
+                
+                <div class="card--info">
+                  <div class="name">
+                    <h2>Mobile UX & UI</h2>
+                    <h4>Web Design Course</h4>
+                    
+                    <div class="row">
+                      <div class="courses">
+                        <i class="fas fa-users"></i>
+                        220
+                      </div>
+                      <div class="courses">
+                        <i class="fas fa-book"></i>
+                        34+ Courses
+                      </div>
+                    </div>
+                  </div>
+    
+                  
+                  
+                </div>
+              </div>            
+            </div>
+    
+          </div>
         </div>
-
 
         <div class="black--gallery course--gallery">
          
@@ -196,19 +410,19 @@
               <div class="course">
                 <div class="standart">
 
-                  <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+                  <img class="course--img" src="/WEB-project/pictures/courses/course-3.jpg">
   
                   <div class="holder teacher">
-                    <img src="/WEB-project/pictures/people/guy1.jpg">
-                    Warner
+                    <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    Turner
                   </div>
                   <div class="holder">
-                    <div class="orange price"><span>$59</span></div>
+                    <div class="orange price"><span>$49</span></div>
                   </div>
                   <div class="bottom">
                     <div class="info">
                       <div class="blue highlited section">
-                        English
+                        French
                       </div>
                       <div class="stars">
                         <span class="fa fa-star checked"></span>
@@ -220,7 +434,7 @@
                     </div>
 
                     <h1>
-                      Best Courses For Learning English Courses
+                      Start Learning French Fast & Easy
                     </h1>
 
                     <div class="stats">
@@ -241,11 +455,11 @@
                   </div>
                 </div>
 
-                <div class="hidden">
+                <div class="orange hidden">
 
                   <div class="info">
                     <div class="blue highlited section">
-                      English
+                      French
                     </div>
                     <div class="stars">
                       <span class="fa fa-star checked"></span>
@@ -257,14 +471,14 @@
                   </div>
 
                   <h1>
-                    Best Courses For Learning English Courses
+                    Start Learning French Fast & Easy
                   </h1>
                  
                   <div class="holder teacher">
-                    <img src="/WEB-project/pictures/people/guy1.jpg">
-                    Warner
+                    <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    Turner
                     <div class="holder">
-                      <div class="white price"><span>$59</span></div>
+                      <div class="text--orange price"><span>$49</span></div>
                     </div>
                   </div>
                   
@@ -273,7 +487,7 @@
                    
                   <div class="enroll">
                     <a href="./courses-detail.html">
-                      <button class="enroll--button">Get Enrolled <i class="fas fa-arrow-right"></i></button>
+                      <button class="enroll--button ">Get Enrolled <i class="fas fa-arrow-right"></i></button>
                     </a>
                   </div>
                    <div class="stats">
@@ -343,7 +557,7 @@
                   </div>
                 </div>
 
-                <div class="hidden">
+                <div class="orange hidden">
 
                   <div class="info">
                     <div class="blue highlited section">
@@ -366,7 +580,7 @@
                     <img src="/WEB-project/pictures/people/guy1.jpg">
                     Warner
                     <div class="holder">
-                      <div class="white price"><span>$59</span></div>
+                      <div class="text--orange price"><span>$59</span></div>
                     </div>
                   </div>
                   
@@ -400,19 +614,19 @@
               <div class="course">
                 <div class="standart">
 
-                  <img class="course--img" src="/WEB-project/pictures/media/group-students.jpg">
+                  <img class="course--img" src="/WEB-project/pictures/courses/course-6.jpg">
   
                   <div class="holder teacher">
-                    <img src="/WEB-project/pictures/people/guy1.jpg">
-                    Warner
+                    <img src="/WEB-project/pictures/people/people-joy.jpg">
+                    Franklin
                   </div>
                   <div class="holder">
-                    <div class="orange price"><span>$59</span></div>
+                    <div class="orange price"><span>$39</span></div>
                   </div>
                   <div class="bottom">
                     <div class="info">
                       <div class="blue highlited section">
-                        English
+                        Maths
                       </div>
                       <div class="stars">
                         <span class="fa fa-star checked"></span>
@@ -424,7 +638,7 @@
                     </div>
 
                     <h1>
-                      Best Courses For Learning English Courses
+                      Algrebra I & II In Premium Package For You
                     </h1>
 
                     <div class="stats">
@@ -445,11 +659,11 @@
                   </div>
                 </div>
 
-                <div class="hidden">
+                <div class="orange hidden">
 
                   <div class="info">
                     <div class="blue highlited section">
-                      English
+                      Maths
                     </div>
                     <div class="stars">
                       <span class="fa fa-star checked"></span>
@@ -461,14 +675,14 @@
                   </div>
 
                   <h1>
-                    Best Courses For Learning English Courses
+                    Algrebra I & II In Premium Package For You
                   </h1>
                  
                   <div class="holder teacher">
-                    <img src="/WEB-project/pictures/people/guy1.jpg">
-                    Warner
+                    <img src="/WEB-project/pictures/people/people-joy.jpg">
+                    Franklin
                     <div class="holder">
-                      <div class="white price"><span>$59</span></div>
+                      <div class="text--orange price"><span>$39</span></div>
                     </div>
                   </div>
                   
@@ -503,11 +717,115 @@
 
           </div>
 
+          <a href="courses.html"> 
+            <button class="defbutton">VIEW COURSES</button>
+          </a>
+        </div>
 
+        <div id="lightbox" class="modal">
+          <span class="close cursor" onclick="closeModal()"><i class="fas fa-times-circle"></i></span>
+          <div class="modal-content">
+        
+            <div class="image--slide">
+              <img src="/WEB-project/pictures/people/people-joy.jpg" style="width:100%">
+            </div>
+        
+            <div class="image--slide">
+              <img src="/WEB-project/pictures/people/guy1.jpg" style="width:100%">
+            </div>            
+            <div class="image--slide">
+              <img src="/WEB-project/pictures/people/mand-holding-cup.jpg" style="width:100%">
+            </div>
 
-       </div>
+            <div class="image--slide">
+              <img src="/WEB-project/pictures/people/young-man.jpg" style="width:100%">
+            </div>
+            <div class="image--slide">
+              <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg" style="width:100%">
+            </div>
+            <div class="image--slide">
+              <img src="/WEB-project/pictures/media/business-women.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></a>
+            
+          </div>
+        </div>
 
        <div class="campus--gallery">
+        <div class="standart--heading">
+          <div class="introduction">
+            ▪▪▪ Photo & Albums ▪▪▪
+          </div>
+          <h1>Campus Gallery</h1>
+        </div>
+
+        <div class="gallery--navigation">
+          <div class="item highlited">Show All</div>
+          <div class="item">University</div>
+          <div class="item">Group Study</div>
+          <div class="item">Awards</div>
+          <div class="item">Students</div>
+          <div class="item">Teachers</div>
+          <div class="item">Campus</div>
+        </div>
+
+        <div class="gallery--photos">
+
+          <div class="row">
+            <div class="holder">
+              <img src="/WEB-project/pictures/people/people-joy.jpg">
+              <div class="description">
+                  <h2>Group Study</h2>
+                  <h4>University Campus</h4>
+                  <button class="defbutton" onclick="openModal();currentSlide(1)"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="holder">
+              <img src="/WEB-project/pictures/people/guy1.jpg">
+              <div class="description">
+                  <h2>Group Study</h2>
+                  <h4>University Campus</h4>
+                  <button class="defbutton" onclick="openModal();currentSlide(2)"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="holder">
+              <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
+              <div class="description">
+                  <h2>Group Study</h2>
+                  <h4>University Campus</h4>
+                  <button class="defbutton" onclick="openModal();currentSlide(3)"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="holder">
+              <img src="/WEB-project/pictures/people/young-man.jpg">
+              <div class="description">
+                  <h2>Group Study</h2>
+                  <h4>University Campus</h4>
+                  <button class="defbutton"  onclick="openModal();currentSlide(4)"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="holder">
+              <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+              <div class="description">
+                  <h2>Group Study</h2>
+                  <h4>University Campus</h4>
+                  <button class="defbutton" onclick="openModal();currentSlide(5)"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="holder">
+              <img src="/WEB-project/pictures/media/business-women.jpg">
+              <div class="description">
+                  <h2>Group Study</h2>
+                  <h4>University Campus</h4>
+                  <button class="defbutton" onclick="openModal();currentSlide(6)"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
 
        </div>
 
@@ -531,7 +849,7 @@
                 <h4>Math Teacher</h4>
 
                 <div class="courses">
-                  <img src="/WEB-project/icons/book.svg">
+                  <i class="fas fa-book"></i>
                   750+ Courses
                 </div>
               </div>
@@ -561,16 +879,16 @@
           </div>
 
           <div class="card">
-            <img class="photo" src="/WEB-project/pictures/people/guy1.jpg">
+            <img class="photo" src="/WEB-project/pictures/people/young-man.jpg">
             
             <div class="card--info">
               <div class="name">
-                <h2>Somalia D Silva</h2>
-                <h4>Math Teacher</h4>
+                <h2>Joel Nicolo</h2>
+                <h4>IT Teacher</h4>
 
                 <div class="courses">
-                  <img src="/WEB-project/icons/book.svg">
-                  750+ Courses
+                  <i class="fas fa-book"></i>
+                  370+ Courses
                 </div>
               </div>
 
@@ -599,16 +917,16 @@
           </div>
 
           <div class="card">
-            <img class="photo" src="/WEB-project/pictures/people/guy1.jpg">
+            <img class="photo" src="/WEB-project/pictures/people/people-joy.jpg">
             
             <div class="card--info">
               <div class="name">
-                <h2>Somalia D Silva</h2>
-                <h4>Math Teacher</h4>
+                <h2>Stella Artois</h2>
+                <h4>English Teacher</h4>
 
                 <div class="courses">
-                  <img src="/WEB-project/icons/book.svg">
-                  750+ Courses
+                  <i class="fas fa-book"></i>
+                  550+ Courses
                 </div>
               </div>
 
@@ -637,16 +955,16 @@
           </div>
 
           <div class="card">
-            <img class="photo" src="/WEB-project/pictures/people/guy1.jpg">
+            <img class="photo" src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
             
             <div class="card--info">
               <div class="name">
-                <h2>Somalia D Silva</h2>
+                <h2>Anna Miklovna</h2>
                 <h4>Math Teacher</h4>
 
                 <div class="courses">
-                  <img src="/WEB-project/icons/book.svg">
-                  750+ Courses
+                  <i class="fas fa-book"></i>
+                  250+ Courses
                 </div>
               </div>
 
@@ -678,6 +996,80 @@
       </div>
 
       <div class="events--upcoming">
+        <div class="standart--heading">
+          <div class="introduction">
+            ▪▪▪ Latest Events ▪▪▪
+          </div>
+
+          <h1>Upcoming Events</h1>
+        </div>
+
+        <div class="events--display">
+          <div class="event--main">
+            <img class="image--main" src="/WEB-project/pictures/mainpage/writing.jpg">
+            <div class="text">
+              <div class="row">
+                <div class="row">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p>25 NOV 2020</p>
+                </div>
+                <div class="row">
+                  <i class="fas fa-clock"></i>
+                  <p>08 AM - 09 PM</p>
+                </div>
+                <div class="row">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>PARIS, FRANCE</p>
+                </div>
+              </div>
+              <h2>Web Design & Development Conference 2020</h2>
+              <p>Donec felis lectus, facilisis eu sapien quis, porttitor posuere risus. Donec ac est pulvinar, euismod odio et, tempus velit. Nam tempor magna bibendum.</p>
+              <div class="row" style="height: 0;">
+                <div class="frame--price">$20</div>
+              </div>
+              <a href="./event-detail.html">
+                <button class="defbutton">VIEW EVENT <i class="fas fa-arrow-right"></i></button>
+              </a>
+            </div>
+          </div>
+
+          <div class="conferences">
+            <div class="content" style="margin-bottom: 1em;">
+              <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
+
+              <div class="frame">
+                <div class="frame--price">$20</div>
+                <div class="frame--info">
+                  <p><i class="far fa-calendar-alt"></i> 25 June 2021</p>
+                  <p><i class="far fa-clock"></i> 08am - 09pm</p>
+                </div>
+                <a href="./event-detail.html">
+                  <p class="frame--name">Annual Conference 2021</p>
+                  <p>JOIN EVENT <i class="fas fa-arrow-right"></i></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="content">
+              <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
+
+              <div class="frame">
+                <div class="frame--price">$20</div>
+                <div class="frame--info">
+                  <p><i class="far fa-calendar-alt"></i> 25 June 2021</p>
+                  <p><i class="far fa-clock"></i> 08am - 09pm</p>
+                </div>
+                <a href="./event-detail.html">
+                  <p class="frame--name">Annual Conference 2021</p>
+                  <p>JOIN EVENT <i class="fas fa-arrow-right"></i></p>
+                </a>
+              </div>
+            </div>
+         </div>        
+        </div>
+        <a class="button--events" href="./event-detail.html">
+          <button class="button--bottom defbutton">VIEW ALL EVENTS</button>
+        </a>
       </div>
 
       <div class="feedback">
@@ -689,25 +1081,66 @@
 
           <div class="reviews">
             <div class="left">
-              <p class="text">
-                Etiam quis quam. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in 
-                pharetra metus odio a lectus. Mauris dictum facilisis augue. Maecenas lorem. 
-              </p>
-              <p class="underline">
-                Maecenas ipsum velit, 
-                consectetuer eu lobortis ut, dictum at dui. Etiam dictum tincidunt diam. Aliquam erat volutpat. 
-              </p>
-              <div class="commentator">
-                <img class="commentator-pic" src="/WEB-project/pictures/people/people-joy.jpg">
-                <div class="commentator--info">
-                  <h2>Sousa Femandes</h2>
-                  <h3>CEO & Founder</h3>
+              <div class="people">
+                <div class="active person">
+                  <p class="text">
+                    Etiam quis quam. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in 
+                    pharetra metus odio a lectus. Mauris dictum facilisis augue. Maecenas lorem. 
+                  </p>
+                  <p class="underline">
+                    Maecenas ipsum velit, 
+                    consectetuer eu lobortis ut, dictum at dui. Etiam dictum tincidunt diam. Aliquam erat volutpat. 
+                  </p>
+                  <div class="commentator">
+                    <img class="commentator-pic" src="/WEB-project/pictures/people/people-joy.jpg">
+                    <div class="commentator--info">
+                      <h2>Sousa Femandes</h2>
+                      <h3>CEO & Founder</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="person">
+                  <p class="text">
+                    Maecenas ipsum velit. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in 
+                    pharetra metus odio a lectus. Mauris dictum facilisis augue. Maecenas lorem. 
+                  </p>
+                  <p class="underline">
+                    Etiam ipsum velit, 
+                    consectetuer eu lobortis ut, dictum at dui. Etiam dictum tincidunt diam. Aliquam erat volutpat. 
+                  </p>
+                  <div class="commentator">
+                    <img class="commentator-pic" src="/WEB-project/pictures/people/guy1.jpg">
+                    <div class="commentator--info">
+                      <h2>Hall van Neider</h2>
+                      <h3>COO</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="person">
+                  <p class="text">
+                    Sed ac dolor sit amet purus malesuada congue. Nulla non lectus sed nisl molestie malesuada. Vivamus porttitor turpis ac leo. Nullamrhoncus aliquam metus. Nunc dapibus tortor ve.
+                  </p>
+                  <p class="underline">
+                    Linea vepsum velit, 
+                    consectetuer eu lobortis ut, dictum at dui. Etiam dictum tincidunt diam. Aliquam erat volutpat. 
+                  </p>
+                  <div class="commentator">
+                    <img class="commentator-pic" src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                    <div class="commentator--info">
+                      <h2>Mia Hall</h2>
+                      <h3>Senior Lector</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+
               <div class="commentator--nav">
                 <div class="commentator--buttons">
-                  <button class="smallbutton">⟵</button>
-                  <button class="smallbutton">⟶</button>
+                  <button class="smallbutton" id="prev" onclick="goPrev()">⟵</button>
+                  <button class="smallbutton" id="next" onclick="goNext()">⟶</button>
                 </div>
                 <img src="/WEB-project/icons/left-quote.svg">
               </div>
@@ -717,17 +1150,17 @@
               <div class="gallery">
                 <div class="column">
                   <img src="/WEB-project/pictures/people/young-man.jpg">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
+                  <img src="/WEB-project/pictures/people/guy1.jpg">
                 </div>
                 <div class="column">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
+                  <img src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                  <img src="/WEB-project/pictures/people/people-joy.jpg">
+                  <img src="/WEB-project/pictures/people/mand-holding-cup.jpg">
                 </div>
                 <div class="third column">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
-                  <img src="/WEB-project/pictures/people/young-man.jpg">
+                  <img src="/WEB-project/pictures/mainpage/people.jpg">
+                  <img src="/WEB-project/pictures/media/business-women.jpg">
+                  <img src="/WEB-project/pictures/courses/course-5.jpg">
                 </div>
               </div>
               <div class="white square"></div>
@@ -738,7 +1171,47 @@
         </div>
       </div>
 
-      <div class="instructor--recruitment">
+      <div class="green instructor--recruitment">
+        <div class="left">
+          <img class="img--main" src="/WEB-project/pictures/media/business-women.jpg">
+          <div class="holder">
+            <img class="img--secondary" src="/WEB-project/pictures/mainpage/overjoyed-young.jpg">
+          </div>
+        </div>
+        <div class="right">
+          <div class="standart--heading">
+            <div class="introduction">
+              ▪▪▪ Latest Events
+            </div>
+  
+            <h1>Become an Instructor</h1>
+          </div>
+          <p>Donec ligula dui, convallis eu purus non, hendrerit porta diam. Nulla 
+            tellus nulla, pharetra id lectus vitae, auctor imperdiet justo. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
+            dignissim volutpat ullamcorper.</p>
+          <div class="row">
+            <div class="column">
+              <div class="border text column">
+                <i class="icon--big fas fa-laptop-code"></i>
+                <h2>Digitalization</h2>
+                <p>Aenean accumsan pellentesque turpis sit amet aliquam.</p>
+              </div>
+              <button class="defbutton">JOIN WITH US <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="column">
+              <div class="text column">
+                <i class="icon--big fas fa-book"></i>
+                <h2>Book Friendly</h2>
+                <p>Aenean accumsan pellentesque turpis sit amet aliquam.</p>
+              </div>
+              <button class="white defbutton">BECOME A PARTNER</button>
+      
+              
+              
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="newsnblog">
@@ -753,7 +1226,7 @@
 
         <div class="blog--cards">
           <div class="card">
-            <img class="img--main" src="/WEB-project/pictures/mainpage/writing.jpg">
+            <img class="img--main" src="/WEB-project/pictures/courses/course-1.jpg">
             <div class="bottom">
               <div class="info">
                 <div class="holder">
@@ -773,9 +1246,11 @@
                 <h4>David Simala</h4>
               </div>
 
-              <div class="buttonholder">
-                <button class="smallbutton">⟶</button>
-              </div>
+              <a href="./blog-detail.html">
+                <div class="buttonholder">
+                  <button class="smallbutton">⟶</button>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -796,18 +1271,19 @@
               <h2>Djang Highlights Models Admin And Harness Relational Database</h2>
 
               <div class="author">
-                <img class="author--img" src="/WEB-project/pictures/people/young-man.jpg">
+                <img class="author--img" src="/WEB-project/pictures/people/people-joy.jpg">
                 <h4>David Simala</h4>
               </div>
-
-              <div class="buttonholder">
-                <button class="smallbutton">⟶</button>
-              </div>
+              <a href="./blog-detail.html">
+                <div class="buttonholder">
+                  <button class="smallbutton">⟶</button>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="card">
-            <img class="img--main" src="/WEB-project/pictures/mainpage/writing.jpg">
+            <img class="img--main" src="/WEB-project/pictures/courses/course-4.jpg">
             <div class="bottom">
               <div class="info">
                 <div class="holder">
@@ -823,13 +1299,15 @@
               <h2>Smash Podcast Episode With Laura Kalbag What Is Online Privacy</h2>
 
               <div class="author">
-                <img class="author--img" src="/WEB-project/pictures/people/young-man.jpg">
-                <h4>David Simala</h4>
+                <img class="author--img" src="/WEB-project/pictures/people/cheerful-curly-business-girl-wearing-glasses.jpg">
+                <h4>Sona Hale</h4>
               </div>
 
-              <div class="buttonholder">
-                <button class="smallbutton">⟶</button>
-              </div>
+              <a href="./blog-detail.html">
+                <div class="buttonholder">
+                  <button class="smallbutton">⟶</button>
+                </div>
+              </a>
             </div>
           </div>
         </div>
